@@ -31,4 +31,31 @@ function loginUserMessage(username = 'sam') // if you not pass any value thank d
     return `${username} just Logged In`
 }
 
-console.log(loginUserMessage());
+// console.log(loginUserMessage());
+
+function calculateCardPrice(...num1){  //... -> rest or spread operator depends on use case
+    return num1;
+}
+
+// function calculateCardPrice(val1 , val2 ,...num1){  //... -> rest or spread operator depends on use case
+//     return num1;
+// } IMP note
+
+// console.log(calculateCardPrice(200 , 400 , 500));
+
+// object with function
+
+const user ={
+    username : "Parth",
+    prices : 199
+}
+
+function handleObject(anyObject)
+{
+    console.log(`Username is ${anyObject.username} and Price is ${anyObject.price}`);
+}
+
+handleObject({
+    username : "sam",
+    price : 199
+})
